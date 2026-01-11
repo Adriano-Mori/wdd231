@@ -23,6 +23,9 @@
 
     /*body*/
 
+    h1 {
+        text-align: left;
+    }
 
     .about-grid {
         display: grid;

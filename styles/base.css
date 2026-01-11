@@ -79,6 +79,7 @@ header span {
 /*body*/
 h1 {
     margin: 1rem 10px;
+    text-align: center;
 }
 
 h2 {
