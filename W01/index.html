@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | WDD231</title>
+    <meta name="description"
+        content="Hompage of the Discover Peru project, explaining mostly everything about the country. Webpage using HTML, CSS and JS">
+    <meta name="author" content="Alex Mori">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+</head>
+
+<body>
+    <header>
+        <img src="images/spiral-solid-full.svg" alt="site-logo" width="1" height="1">
+        <span>Alex Mori | WDD231</span>
+        <button id="nav-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="about-grid">
+            <section class="description">
+                <h2>About Me</h2>
+                <p>Hello everyone, my name is Alex Mori. I'm 18 years old and I'm from Lima, Perú. In my free time, I
+                    enjoy
+                    doing different
+                    things like drawing, cooking, and learning new skills that help me grow both personally and
+                    academically. I'm currently
+                    studying software development because I'm really interested in technology, programming, and the way
+                    digital tools can
+                    make life easier and more creative. Besides that, I like spending time with my friends and family,
+                    whether it's sharing
+                    a meal, going out together, or just having fun conversations. I consider myself curious and
+                    motivated,
+                    always looking
+                    for opportunities to improve and discover new passions. I'm really excited to see what the future
+                    has in
+                    store for me,
+                    and I look forward to learning from new experiences and meeting new people. Nice to meet you all!
+                </p>
+            </section>
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <div>
+                    <img src="images/profile.jpg" alt="Alex Mori" width="100">
+                </div>
+            </section>
+        </div>
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="courses"></div>
+
+            <p class="credits">
+                The total credits for course listed above is
+                <span id="credits"></span>
+            </p>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="scripts/navigation.js"></script>
+</body>
+
+</html>

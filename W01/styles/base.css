@@ -1,0 +1,164 @@
+* {
+    font-family: "ABeeZee", sans-serif;
+
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 5px 10px;
+    border-bottom: solid 1px #C9CACC;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #f5f5f5;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #13436B;
+}
+
+/*hamburger*/
+.hamburger {
+    background: none;
+    border: none;
+    color: #13436B;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/*navigation*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: #13436B;
+    text-decoration: none;
+    border-bottom: solid 1px #C9CACC;
+}
+
+.navigation li.current {
+    background: #D9D9D9;
+}
+
+.navigation a:hover {
+    color: #FC8202;
+    background-color: #f5f5f5;
+}
+
+
+/*body*/
+h1 {
+    margin-left: 10px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #13436B;
+    padding: 0.6em;
+    color: #fff;
+    margin: 0
+}
+
+.about-grid,
+.certificates {
+    display: block;
+}
+
+.description,
+.photo,
+.certificates {
+    text-align: justify;
+    padding: 1em;
+
+}
+
+.description p,
+.photo div {
+    font-size: 20px;
+    padding: 2em;
+    margin: 0;
+    background-color: #C9CACC;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    background: #ccc;
+}
+
+.certificates {
+    text-align: center;
+}
+
+.certificates h2 {
+    background-color: #FC8202;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    justify-content: space-around;
+    width: 100%;
+    height: 3em;
+    border: none;
+    color: #13436B;
+    font-weight: bold;
+}
+
+.filters button:hover {
+    cursor: pointer;
+    color: #FC8202
+}
+
+.filters button:active {
+    background-color: #FC8202;
+    color: #fff;
+}
+
+.course {
+    background: #dcdcdc;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+.course.completed {
+    background: #b7e3c0;
+    font-weight: bold;
+}
