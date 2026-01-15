@@ -1,0 +1,28 @@
+{
+    "family_name": "Garcia",
+    "move_in_date": "2025-01-05",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Luis Garcia",
+            "gender": "Male",
+            "birthdate": "1985-03-12"
+        },
+        {
+            "name": "Maria Garcia",
+            "gender": "Female",
+            "birthdate": "1987-07-24"
+        },
+        {
+            "name": "Ana Garcia",
+            "gender": "Female",
+            "birthdate": "2012-11-03"
+        },
+        {
+            "name": "Carlos Garcia",
+            "gender": "Male",
+            "birthdate": "2016-05-18"
+        }
+    ]
+}
