@@ -46,8 +46,18 @@
         align-items: flex-start;
         flex-direction: column;
         height: 400px;
+        font-size: 20px;
         /*overlay*/
         border-image: linear-gradient(90deg, #2525259c, #00000000) fill 1;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     /*DIRECTORY*/

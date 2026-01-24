@@ -76,6 +76,7 @@ header span {
 
 /*body*/
 body {
+
     font-family: "ABeeZee", sans-serif;
     background-color: #E5EDF9;
 }
@@ -84,19 +85,18 @@ body {
     color: #212121;
     text-align: center;
     background-color: #FFC100;
-    padding: 2em;
-    margin: 0;
+    padding: 1.5em;
+    margin: 0 0 0.5em;
 }
 
 .hero {
     /*hero txt*/
-    display: block;
-    padding: 5em;
-    color: #ffffff;
-    font-size: 20px;
-    border-image: linear-gradient(#2525259c, #00000000) fill 1;
     text-align: center;
-
+    display: block;
+    padding: 1em 4em 3em 4em;
+    color: #ffffff;
+    font-size: 15px;
+    border-image: linear-gradient(#2525259c, #00000000) fill 1;
 
     /*hero bg*/
     background-image: url("../images/hero.png");
@@ -106,9 +106,6 @@ body {
     height: 300px;
 }
 
-.hero h1 {
-    font-size: 50px;
-}
 
 .hero a.btn {
     display: block;
@@ -123,10 +120,21 @@ body {
 }
 
 .spotlight {
-    display: grid;
+    display: block;
     justify-items: center;
+}
 
-    grid-template-columns: 1fr 1fr 1fr;
+.spotlight h3 {
+    text-align: center;
+}
+
+.spotlight article {
+    background-color: #ffffff;
+    padding: 1em 2.5em;
+}
+
+.spotlight-content {
+    display: flex;
 }
 
 .view-controls {
