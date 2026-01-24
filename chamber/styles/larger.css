@@ -34,10 +34,23 @@
 
     /*body*/
 
-    h1 {
+    .title h1,
+    .hero {
         text-align: left;
     }
 
+    /*HOME*/
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 400px;
+        /*overlay*/
+        border-image: linear-gradient(90deg, #2525259c, #00000000) fill 1;
+    }
+
+    /*DIRECTORY*/
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
 
