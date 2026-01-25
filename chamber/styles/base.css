@@ -215,11 +215,9 @@ article {
     align-items: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-.spotlight-content {
     height: 300px;
 }
+
 
 /*horizontal alignment for imgand text*/
 article img {
