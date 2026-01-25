@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/footer.mjs" defer></script>
     <script src="scripts/weather.mjs" defer></script>
+    <script src="scripts/members.mjs" defer></script>
 
 
 </head>
@@ -53,66 +54,33 @@
             <a href="#" class="btn">Join Now!</a>
         </section>
         <div class="title">
-            <h1>Homepage</h1>
+            <h2>Homepage</h2>
         </div>
         <div class="cards">
             <section class="events">
                 <h2>Events</h2>
                 <ul>
-                    <li>Business Networking Meeting - Feb 12</li>
-                    <li>SME Workshop: Digital Marketing - Feb 20</li>
-                    <li>Monthly Chamber Meeting - Feb 28</li>
+                    <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
+                    <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
+                    <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
                 </ul>
             </section>
             <section class="weather">
                 <h2>Current Weather</h2>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-                <div id="weather-data">ya</div>
+                <div>
+                    <img id="weather-icon" src="" alt="">
+
+
+                    <div id="weather-data"></div>
+                </div>
             </section>
             <section class="forecast">
                 <h2>Weather Forecast</h2>
-                <div id="forecast-data">
-
-                </div>
+                <div id="forecast-data"></div>
             </section>
         </div>
-        <section class="spotlight">
-            <article>
-                <h3>Business Name</h3>
-                <div class="spotlight-content">
-                    <img src="images/placeholder.png" width="200" alt="gato">
-                    <ul>
-                        <li>hola</li>
-                        <li>hola2</li>
-                        <li>hola3</li>
-                    </ul>
-                </div>
-            </article>
-            <article>
-                <h3>Business Name</h3>
-                <div class="spotlight-content">
-                    <img src="images/placeholder.png" width="200" alt="gato">
-                    <ul>
-                        <li>hola</li>
-                        <li>hola2</li>
-                        <li>hola3</li>
-                    </ul>
-                </div>
-            </article>
-            <article>
-                <h3>Business Name</h3>
-                <div class="spotlight-content">
-                    <img src="images/placeholder.png" width="200" alt="gato">
-                    <ul>
-                        <li>hola</li>
-                        <li>hola2</li>
-                        <li>hola3</li>
-                    </ul>
-                </div>
-            </article>
+        <section class="spotlight" id="spotlight">
         </section>
-
     </main>
     <footer>
         <div class="address">

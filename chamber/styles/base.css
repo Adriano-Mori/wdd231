@@ -81,12 +81,17 @@ body {
     background-color: #E5EDF9;
 }
 
-.title h1 {
+.title h1,
+.title h2 {
     color: #212121;
     text-align: center;
     background-color: #FFC100;
     padding: 1.5em;
     margin: 0 0 0.5em;
+}
+
+.title h2 {
+    font-size: xx-large;
 }
 
 .hero {
@@ -114,25 +119,55 @@ body {
     padding: 20px 40px;
     border-radius: 10px;
     border: none;
+    font-size: 20px;
     text-decoration: none;
     color: #212121;
     font-weight: bold;
 }
 
-.spotlight {
-    display: block;
-    justify-items: center;
+/*events & weather*/
+.weather>div {
+    display: flex;
+    align-items: center;
 }
 
-.spotlight h3 {
+#weather-icon {
+    width: 50%;
+    height: 50%;
+}
+
+.cards ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-inline: 10px;
+}
+
+.events ul {
+    margin-top: 0;
+}
+
+.cards li {
+    padding-block: 10px;
+}
+
+.events,
+.forecast {
     text-align: center;
 }
 
-.spotlight article {
-    background-color: #ffffff;
-    padding: 1em 2.5em;
+.events h2 {
+    background-color: #93DA24;
 }
 
+.weather h2 {
+    background-color: #66AAF0;
+}
+
+.forecast h2 {
+    background-color: #FFC100;
+}
+
+/*spotlight*/
 .spotlight-content {
     display: flex;
 }
@@ -142,20 +177,60 @@ body {
     justify-items: center;
     margin-top: 0.5em;
     padding: 2em;
+
 }
 
-.cards section {
-    background-color: #ffffff;
+.cards section,
+article {
     width: 100%;
-    padding: .5em .2em;
     margin-block: 1em;
 }
 
-.cards h2 {
+
+
+.cards h2,
+.spotlight h3 {
     text-align: center;
+    padding: 1em;
+    margin-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-/**/
+.spotlight h3 {
+    background-color: #93DA24;
+}
+
+.spotlight {
+    gap: 1em;
+    margin-inline: 2em;
+}
+
+.events ul,
+.weather>div,
+.forecast>div,
+.spotlight-content {
+    background-color: #ffffff;
+    padding: 10px;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.spotlight-content {
+    height: 300px;
+}
+
+/*horizontal alignment for imgand text*/
+article img {
+    width: 125px;
+    height: 125px;
+    margin: 10px 25px 10px 10px;
+}
+
+
+
+/*DIRECTORY*/
 .view-controls {
     text-align: center;
 }

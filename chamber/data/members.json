@@ -5,7 +5,7 @@
             "address": "Av. Argentina 455, Nuevo Chimbote, Áncash, Peru",
             "phoneNumber": "+51 1-6135000",
             "website": "https://www.rokys.com.pe",
-            "imageFile": "../images/rokys-logo.png",
+            "imageFile": "rokys-logo.png",
             "membershipLevel": 2,
             "otherInfo": "Peruvian restaurant chain known for grilled chicken and family meals."
         },
@@ -14,7 +14,7 @@
             "address": "Urb. Los Álamos, Av. Brasil 6515, Nuevo Chimbote 02711, Peru",
             "phoneNumber": "+51 998-393-623",
             "website": "https://www.comet.com.pe/",
-            "imageFile": "../images/comet-logo.png",
+            "imageFile": "comet-logo.png",
             "membershipLevel": 3,
             "otherInfo": "Metal-mechanical company dedicated to industrial design, fabrication, and assembly services."
         },
@@ -23,7 +23,7 @@
             "address": "VFCJ+WV8, Nuevo Chimbote 02711, Peru",
             "phoneNumber": "[Not publicly available]",
             "website": "https://shalom.com.pe/",
-            "imageFile": "../images/shalom-logo.png",
+            "imageFile": "shalom-logo.png",
             "membershipLevel": 1,
             "otherInfo": "Transportation and logistics services for business and cargo operations."
         },
@@ -32,7 +32,7 @@
             "address": "Nuevo Chimbote, Peru",
             "phoneNumber": "Available on social media",
             "website": "https://costagas.com.pe/",
-            "imageFile": "../images/costagas-logo.png",
+            "imageFile": "costagas-logo.png",
             "membershipLevel": 1,
             "otherInfo": "Local gas cylinder delivery service for residential and commercial customers."
         },
@@ -41,7 +41,7 @@
             "address": "Chimbote 02804, Áncash, Peru MegaPlaza Chimbote)",
             "phoneNumber": "(01) 505 0505",
             "website": "https://kfc.com.pe/",
-            "imageFile": "../images/kfc-chim-logo.png",
+            "imageFile": "kfc-chim-logo.png",
             "membershipLevel": 3,
             "otherInfo": "International fast food chain specializing in fried chicken with presence in Chimbote."
         },
@@ -50,7 +50,7 @@
             "address": "Panamericana Norte s/n Lote 1 Mz 9, Urb. Paseo del Mar, Nuevo Chimbote, Áncash, Peru (Real Plaza Nuevo Chimbote)",
             "phoneNumber": "+51 43 555678",
             "website": "https://www.plazavea.com.pe",
-            "imageFile": "../images/plazavea-logo.png",
+            "imageFile": "plazavea-logo.png",
             "membershipLevel": 3,
             "otherInfo": "Large supermarket and department store offering groceries, household goods, and more."
         },
@@ -59,7 +59,7 @@
             "address": "Panamericana Norte s/n Lote 1 Mz 9, Urb. Paseo del Mar, Nuevo Chimbote, Áncash, Peru",
             "phoneNumber": "(01) 619-4810",
             "website": "https://www.promart.pe",
-            "imageFile": "../images/promart-logo.png",
+            "imageFile": "promart-logo.png",
             "membershipLevel": 3,
             "otherInfo": "Home improvement and construction store offering tools, furniture, and home products."
         }

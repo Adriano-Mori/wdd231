@@ -35,7 +35,8 @@
     /*body*/
 
     .title h1,
-    .hero {
+    .hero,
+    .title h2 {
         text-align: left;
     }
 
@@ -55,15 +56,25 @@
         font-size: 50px;
     }
 
+    .cards {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1fr;
+        column-gap: 4em;
+        padding-top: 10px;
+    }
+
+    .events ul,
+    .weather>div,
+    .forecast>div {
+        min-height: 300px;
+    }
+
     .spotlight {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1.2em;
+        column-gap: 4em;
+        height: 400px;
+        margin-bottom: 5em;
     }
 
     /*DIRECTORY*/

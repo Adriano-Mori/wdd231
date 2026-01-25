@@ -17,8 +17,8 @@ async function apiFetch() {
 
             displayResults(currentData);
             displayForecast(forecastData);
-            console.log(currentData)
-            console.log(forecastData)
+            //console.log(currentData)
+            //console.log(forecastData)
 
         } else {
             console.error('One of the API responses failed');
@@ -42,7 +42,7 @@ function displayResults(data) {
     //weatherinfo
     const weatherInfo = [
         { value: `${data.main.temp} °C` },
-        { value: `${data.weather[0].description} °C` },
+        { value: `${data.weather[0].description}` },
         { value: `${data.main.temp_max} °C` },
         { value: `${data.main.temp_min} °C` },
         { value: `${data.main.humidity} °C` },
