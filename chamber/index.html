@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/footer.mjs" defer></script>
+    <script src="scripts/weather.mjs" defer></script>
+
 
 </head>
 
@@ -53,23 +55,28 @@
         <div class="title">
             <h1>Homepage</h1>
         </div>
-        <section class="events">
-            <h2>Events</h2>
-            <ul>
-                <li>Business Networking Meeting - Feb 12</li>
-                <li>SME Workshop: Digital Marketing - Feb 20</li>
-                <li>Monthly Chamber Meeting - Feb 28</li>
-            </ul>
-        </section>
-        <section class="weather">
-            <h2>Current Weather</h2>
-            <figcaption><img src="" alt=""></figcaption>
-            <ul id="current-weather"></ul>
-        </section>
-        <section class="forecast">
-            <h2>Weather Forecast</h2>
-            <ul id="weather-forecast"></ul>
-        </section>
+        <div class="cards">
+            <section class="events">
+                <h2>Events</h2>
+                <ul>
+                    <li>Business Networking Meeting - Feb 12</li>
+                    <li>SME Workshop: Digital Marketing - Feb 20</li>
+                    <li>Monthly Chamber Meeting - Feb 28</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+                <div id="weather-data">ya</div>
+            </section>
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-data">
+
+                </div>
+            </section>
+        </div>
         <section class="spotlight">
             <article>
                 <h3>Business Name</h3>

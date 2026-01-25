@@ -137,6 +137,25 @@ body {
     display: flex;
 }
 
+.cards {
+    display: block;
+    justify-items: center;
+    margin-top: 0.5em;
+    padding: 2em;
+}
+
+.cards section {
+    background-color: #ffffff;
+    width: 100%;
+    padding: .5em .2em;
+    margin-block: 1em;
+}
+
+.cards h2 {
+    text-align: center;
+}
+
+/**/
 .view-controls {
     text-align: center;
 }

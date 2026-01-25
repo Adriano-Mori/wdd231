@@ -60,6 +60,12 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.2em;
+    }
+
     /*DIRECTORY*/
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
