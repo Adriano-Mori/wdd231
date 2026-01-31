@@ -228,7 +228,11 @@ article img {
     margin: 10px 25px 10px 10px;
 }
 
-
+/*JOIN*/
+.form {
+    padding: 2em;
+    display: grid;
+}
 
 /*DIRECTORY*/
 .view-controls {
