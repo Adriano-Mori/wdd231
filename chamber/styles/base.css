@@ -344,6 +344,7 @@ dialog {
 
 .form button {
     background-color: #93DA24;
+    font-size: x-large;
 }
 
 button:hover {
@@ -354,10 +355,6 @@ button:hover {
 dialog button:hover {
     cursor: pointer;
     background-color: #afff2e;
-}
-
-.form button {
-    font-size: x-large;
 }
 
 /*animations*/
