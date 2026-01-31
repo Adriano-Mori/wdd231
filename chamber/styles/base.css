@@ -148,7 +148,7 @@ body {
 }
 
 .cards li,
-.joincards li {
+.membercards li {
     padding-block: 10px;
 }
 
@@ -158,7 +158,7 @@ body {
 }
 
 .events h2,
-.joincards h2 {
+.np h2 {
     background-color: #93DA24;
 }
 
@@ -192,7 +192,7 @@ article {
 
 
 .cards h2,
-.joincards h2,
+.membercards h2,
 .spotlight h3 {
     text-align: center;
     padding: 1em;
@@ -213,7 +213,8 @@ article {
 .events ul,
 .weather>div,
 .forecast>div,
-.spotlight-content {
+.spotlight-content,
+.memberinfo {
     background-color: #ffffff;
     padding: 10px;
     align-items: center;
@@ -222,6 +223,9 @@ article {
     height: 300px;
 }
 
+.memberinfo {
+    height: auto;
+}
 
 /*horizontal alignment for imgand text*/
 article img {
@@ -236,6 +240,7 @@ article img {
     justify-content: stretch;
     margin-inline: 2em;
     column-gap: 2em;
+    margin-bottom: 2em;
 }
 
 .form,
@@ -244,8 +249,17 @@ article img {
     padding: 1rem 1.5rem;
     border-radius: 10px;
     box-shadow: 10px 10px 10px #0000001b;
-    margin-top: 2em;
+    margin-top: 1.3em;
     text-align: center;
+    /*anim*/
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: blockFadeRight 0.9s ease forwards;
+}
+
+.memberinfo,
+dialog {
+    box-shadow: 10px 10px 10px #0000001b;
 }
 
 .form h2 {
@@ -267,16 +281,79 @@ article img {
 input,
 textarea,
 select {
-    padding: 10px 5px 10px;
+    padding: 15px 10px 15px;
     border-radius: 5px;
     border: solid #C9CACC 2px;
 
 }
 
-.joincards {
+/*cards*/
+.membercards {
     display: block;
     text-align: center;
 
+}
+
+.bronze h2 {
+    background: linear-gradient(90deg, #ff8b10, #ce4f00);
+    color: #4a2600;
+}
+
+.silver h2 {
+    background: linear-gradient(270deg, #cce4e9, #c9c9c9);
+}
+
+.gold h2 {
+    background: linear-gradient(270deg, #FC8202, #ffe945, #FFC100);
+    color: #8f4a00
+}
+
+/*cards dialog*/
+dialog {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 500px;
+
+
+}
+
+/*animations*/
+
+.membercards section {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: cardFadeLeft 0.8s ease forwards;
+}
+
+.membercards section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membercards section:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.membercards section:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.membercards section:nth-child(4) {
+    animation-delay: 1s;
+}
+
+@keyframes blockFadeRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes cardFadeLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /*THX*/

@@ -23,15 +23,15 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/footer.mjs" defer>
-    </script>
+    <script src="scripts/footer.mjs" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
     <div class="header-bar">
         <header>
             <img src="images/logo.svg" alt="site-logo" width="21" height="21">
-            <span>Nuevo Chimbote Chamber of Commerce </span>
+            <span>Nuevo Chimbote Chamber of Commerce</span>
             <button id="nav-btn" class="hamburger" aria-label="hamburger button"></button>
         </header>
         <nav id="nav-bar" class="navigation">
@@ -98,39 +98,87 @@
                     <button type="submit">Join the Chamber</button>
                 </form>
             </section>
-            <div class="joincards">
-                <section>
+            <div class="membercards">
+                <section class="np">
+
                     <h2>NP Membership</h2>
-                    <ul>
-                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                    </ul>
+                    <div class="memberinfo">
+                        <p>Business Networking Meeting <br><strong>Feb 12</strong></p>
+                        <p>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></p>
+                        <p>Monthly Chamber Meeting <br><strong>Feb 28</strong></p>
+                        <a href="#np-modal" class="open-modal">Learn more</a>
+                    </div>
                 </section>
-                <section>
+                <section class="bronze">
+
                     <h2>Bronze Membership</h2>
-                    <ul>
-                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                    </ul>
+                    <div class="memberinfo">
+                        <p>Business Networking Meeting <br><strong>Feb 12</strong></p>
+                        <p>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></p>
+                        <p>Monthly Chamber Meeting <br><strong>Feb 28</strong></p>
+                        <a href="#bronze-modal" class="open-modal">Learn more</a>
+                    </div>
                 </section>
-                <section>
+                <section class="silver">
+
                     <h2>Silver Membership</h2>
-                    <ul>
-                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                    </ul>
+                    <div class="memberinfo">
+                        <p>Business Networking Meeting <br><strong>Feb 12</strong></p>
+                        <p>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></p>
+                        <p>Monthly Chamber Meeting <br><strong>Feb 28</strong></p>
+                        <a href="#silver-modal" class="open-modal">Learn more</a>
+                    </div>
                 </section>
-                <section>
+                <section class="gold">
+
                     <h2>Gold Membership</h2>
-                    <ul>
-                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                    </ul>
+                    <div class="memberinfo">
+                        <p>Business Networking Meeting <br><strong>Feb 12</strong></p>
+                        <p>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></p>
+                        <p>Monthly Chamber Meeting <br><strong>Feb 28</strong></p>
+                        <a href="#gold-modal" class="open-modal">Learn more</a>
+                    </div>
                 </section>
+                <!--modals-->
+                <dialog id="np-modal">
+                    <img src="images/check.png" alt="check symbol" width="120">
+                    <h2>NP Membership Benefits</h2>
+                    <ul>
+                        <li>Free directory listing</li>
+                        <li>Access to public events</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
+
+                <dialog id="bronze-modal">
+                    <h2>Bronze Membership Benefits</h2>
+                    <ul>
+                        <li>Directory listing</li>
+                        <li>Networking events</li>
+                        <li>Monthly newsletter</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
+
+                <dialog id="silver-modal">
+                    <h2>Silver Membership Benefits</h2>
+                    <ul>
+                        <li>Homepage spotlight</li>
+                        <li>Event discounts</li>
+                        <li>Training workshops</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
+
+                <dialog id="gold-modal">
+                    <h2>Gold Membership Benefits</h2>
+                    <ul>
+                        <li>Premium homepage placement</li>
+                        <li>Free event tickets</li>
+                        <li>Advertising opportunities</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
             </div>
         </div>
     </main>

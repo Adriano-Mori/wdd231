@@ -116,6 +116,12 @@
         text-align: left;
     }
 
+    input,
+    textarea,
+    select {
+        padding: 10px 5px 10px;
+    }
+
     .joincards {
         display: flex;
         flex-direction: column;
