@@ -157,12 +157,12 @@ body {
     text-align: center;
 }
 
-.events h2,
-.np h2 {
+.events h2 {
     background-color: #93DA24;
 }
 
-.weather h2 {
+.weather h2,
+.np h2 {
     background-color: #66AAF0;
 }
 
@@ -240,7 +240,6 @@ article img {
     justify-content: stretch;
     margin-inline: 2em;
     column-gap: 2em;
-    margin-bottom: 2em;
 }
 
 .form,
@@ -287,11 +286,12 @@ select {
 
 }
 
+
 /*cards*/
 .membercards {
     display: block;
     text-align: center;
-
+    padding-bottom: 20px;
 }
 
 .bronze h2 {
@@ -300,7 +300,7 @@ select {
 }
 
 .silver h2 {
-    background: linear-gradient(270deg, #cce4e9, #c9c9c9);
+    background: linear-gradient(270deg, #bebebe, #cccccc, #b6b6b6);
 }
 
 .gold h2 {
@@ -313,9 +313,51 @@ dialog {
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
-    height: 500px;
+    height: 450px;
+    /*anim*/
+    opacity: 0;
+    transform: translateY(20px);
+    animation: blockFadeUp 0.9s ease forwards;
+}
 
+.join-container button,
+.memberinfo button {
+    border: none;
+    color: #000000;
+    text-decoration: none;
+    padding: 20px 100px;
+    border-radius: 10px;
+    font-weight: bold;
+}
 
+.bronze button {
+    background-color: #ff9500;
+}
+
+.silver button {
+    background-color: #a9a9a9;
+}
+
+.gold button {
+    background: linear-gradient(270deg, #FFC100, #ffde39, #ffae00);
+}
+
+.form button {
+    background-color: #93DA24;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.form button:hover,
+dialog button:hover {
+    cursor: pointer;
+    background-color: #afff2e;
+}
+
+.form button {
+    font-size: x-large;
 }
 
 /*animations*/
@@ -340,6 +382,13 @@ dialog {
 
 .membercards section:nth-child(4) {
     animation-delay: 1s;
+}
+
+@keyframes blockFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes blockFadeRight {

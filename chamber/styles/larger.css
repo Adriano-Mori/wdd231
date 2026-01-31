@@ -122,9 +122,12 @@
         padding: 10px 5px 10px;
     }
 
-    .joincards {
-        display: flex;
-        flex-direction: column;
+    .membercards {
+        margin-bottom: 0;
+    }
+
+    .form button {
+        margin-left: 10px;
     }
 
     /*THX*/
