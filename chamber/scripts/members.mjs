@@ -17,6 +17,16 @@ function displayMembers(members) {
 
     spotlightMembers.forEach(member => {
         const card = document.createElement("article");
+        let membershipLabel = "";
+        if (member.membershipLevel == 3) {
+            membershipLabel = "Gold"
+        }
+        else if (member.membershipLevel == 2) {
+            membershipLabel = "Silver"
+        }
+        else {
+            membershipLabel = "Bronze"
+        }
         card.innerHTML =
             `<h3>${member.name}</h3>
             <div class="spotlight-content">
@@ -26,7 +36,9 @@ function displayMembers(members) {
                 <strong>Phone:</strong>
                  ${member.phoneNumber}</p>
                 <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Membership Level:</strong> ${membershipLabel}</p>
                 <a href="${member.website}" target="_blank"><strong>Visit Website</strong></a>
+                
                 </div>
             </div>`;
         membersContainer.appendChild(card);
