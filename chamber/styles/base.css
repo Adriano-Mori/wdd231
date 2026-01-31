@@ -89,7 +89,9 @@ body {
     margin: 0 0 0.5em;
 }
 
-.title h2 {
+.title h2,
+.form h2,
+.thx-container h2 {
     font-size: xx-large;
 }
 
@@ -173,8 +175,7 @@ body {
     display: flex;
 }
 
-.cards,
-.joincards {
+.cards {
     display: block;
     justify-items: center;
     margin-top: 0.5em;
@@ -191,6 +192,7 @@ article {
 
 
 .cards h2,
+.joincards h2,
 .spotlight h3 {
     text-align: center;
     padding: 1em;
@@ -229,10 +231,66 @@ article img {
 }
 
 /*JOIN*/
-.form {
-    padding: 2em;
-    display: grid;
+.join-container {
+    display: block;
+    justify-content: stretch;
+    margin-inline: 2em;
+    column-gap: 2em;
 }
+
+.form,
+.thx-container {
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #0000001b;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.form h2 {
+    color: #0B0712
+}
+
+.form p {
+    font-size: 17px;
+    color: #524D56;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+input,
+textarea,
+select {
+    padding: 10px 5px 10px;
+    border-radius: 5px;
+    border: solid #C9CACC 2px;
+
+}
+
+.joincards {
+    display: block;
+    text-align: center;
+
+}
+
+/*THX*/
+.title p {
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.thx-container {
+    margin-inline: 2em;
+    margin-bottom: 2em;
+}
+
+
 
 /*DIRECTORY*/
 .view-controls {

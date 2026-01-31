@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home | Nuevo Chimbote Chamber of Commerce</title>
+    <title> Join | Nuevo Chimbote Chamber of Commerce</title>
     <meta name="description"
         content="Home of the Nuevo Chimbote Chamber of Commerce. Discover member businesses, services, town information and more.">
     <meta name="author" content="Alex Mori">
@@ -25,12 +25,6 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/footer.mjs" defer>
     </script>
-    <scri pt src="scripts/weather.mjs" defer>
-        </script>
-        <scri pt src="scripts/members.mjs" defer>
-            </script>
-
-
 </head>
 
 <body>
@@ -50,80 +44,94 @@
         </nav>
     </div>
     <main>
-        <section class="hero">
-            <h1>Join the Chamber<br>of Commerce!</h1>
-            <p>The Nuevo Chimbote Chamber of Commerce is open<br>for most businesses and professionals seeking
-                growth<br>and connections in the town!</p>
-            <a href="#" class="btn">Join Now!</a>
-        </section>
         <div class="title">
-            <h2>Join</h2>
+            <h1>Join</h1>
         </div>
-        <section class="form">
-            <form>
-                <label for="firstName">First Name: </label><input type="text" id="firstName" name="firstName"
-                    title="Enter your first name." autocapitalize="given-name" required="required">
-                <label for="lastName">Last Name: </label><input type="text" id="lastName" name="lastName"
-                    title="Enter your last name." autocapitalize="family-name" required="required">
-                <label for="orgTitle">Organizational Title: </label><input type="text" id="orgTitle"
-                    name="OrganizationalTitle" title="Type your title within the Organization"
-                    autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
-                <label for="email">Email Address: </label><input type="email" id="email" name="email"
-                    title="Enter a valid email address" autocomplete="email" placeholder="example@email.com"
-                    required="required">
-                <label for="phone">Mobile Phone: </label><input type="tel" id="phone" name="phone"
-                    title="Enter your mobile phone number" autocomplete="tel" required="required">
-                <label for="organization">Organization Name: </label><input type="text" id="organization"
-                    name="organization" title="Enter your the bussiness or organization name"
-                    autocomplete="organization" required="required">
-                <label for="membership">Membership Level</label>
-                <select id="membership" name="membershipLevel" title="Select a membership level" required>
-                    <option value="">Select a level</option>
-                    <option value="np">NP Membership (No Fee)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-
-                <label for="description">Organization Description</label>
-                <textarea id="description" name="description"
-                    title="Give a description of your organization"></textarea>
-                <input type="hidden" id="timestamp" name="timestamp">
-            </form>
-        </section>
-        <div class="joincards">
-            <section>
-                <h2>NP Membership</h2>
-                <ul>
-                    <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                    <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                    <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                </ul>
+        <div class="join-container">
+            <section class="form">
+                <h2>Sign Up to Join the Chamber!</h2>
+                <p>Join now to participate in the Nuevo Chimbote Chamber of Commerce and enjoy membership benefits!</p>
+                <form method="get" action="thankyou.html">
+                    <div class=" form-field">
+                        <label for="firstName">First Name: </label><input type="text" id="firstName" name="firstName"
+                            title="Enter your first name." autocomplete="given-name" required="required">
+                    </div>
+                    <div class="form-field">
+                        <label for="lastName">Last Name: </label><input type="text" id="lastName" name="lastName"
+                            title="Enter your last name." autocomplete="family-name" required="required">
+                    </div>
+                    <div class="form-field">
+                        <label for="orgTitle">Organizational Title: </label><input type="text" id="orgTitle"
+                            name="OrganizationalTitle" title="Type your title within the Organization"
+                            autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email Address: </label><input type="email" id="email" name="email"
+                            title="Enter a valid email address" autocomplete="email" placeholder="example@email.com"
+                            required="required">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Mobile Phone: </label><input type="tel" id="phone" name="phone"
+                            title="Enter your mobile phone number" autocomplete="tel" required="required">
+                    </div>
+                    <div class="form-field">
+                        <label for="organization">Organization Name: </label><input type="text" id="organization"
+                            name="organization" title="Enter your the bussiness or organization name"
+                            autocomplete="organization" required="required">
+                    </div>
+                    <div class="form-field">
+                        <label for="membership">Membership Level</label>
+                        <select id="membership" name="membershipLevel" title="Select a membership level" required>
+                            <option value="">Select a level</option>
+                            <option value="np">NP Membership (No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="description">Organization Description</label>
+                        <textarea id="description" name="description"
+                            title="Give a description of your organization"></textarea>
+                    </div>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <button type="submit">Join the Chamber</button>
+                </form>
             </section>
-            <section>
-                <h2>Bronze Membership</h2>
-                <ul>
-                    <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                    <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                    <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Silver Membership</h2>
-                <ul>
-                    <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                    <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                    <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Gold Membership</h2>
-                <ul>
-                    <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
-                    <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
-                    <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
-                </ul>
-            </section>
+            <div class="joincards">
+                <section>
+                    <h2>NP Membership</h2>
+                    <ul>
+                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
+                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
+                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Bronze Membership</h2>
+                    <ul>
+                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
+                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
+                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Silver Membership</h2>
+                    <ul>
+                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
+                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
+                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Gold Membership</h2>
+                    <ul>
+                        <li>Business Networking Meeting <br><strong>Feb 12</strong></li>
+                        <li>SME Workshop: Digital Marketing<br><strong>Feb 20</strong></li>
+                        <li>Monthly Chamber Meeting <br><strong>Feb 28</strong></li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </main>
     <footer>

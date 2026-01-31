@@ -103,10 +103,29 @@
     }
 
     /*JOIN*/
-    .joincards {
+    .join-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 1.5em;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    .form,
+    .thx-container {
+        text-align: left;
+    }
+
+    .joincards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*THX*/
+
+    .thx-container img {
+        display: block;
+        margin: 1em auto;
     }
 
     /*footer*/
