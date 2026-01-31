@@ -102,6 +102,13 @@
         font-weight: bold;
     }
 
+    /*JOIN*/
+    .joincards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1.5em;
+    }
+
     /*footer*/
     footer {
         display: flex;

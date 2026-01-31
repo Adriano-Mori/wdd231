@@ -145,7 +145,8 @@ body {
     margin-top: 0;
 }
 
-.cards li {
+.cards li,
+.joincards li {
     padding-block: 10px;
 }
 
@@ -154,7 +155,8 @@ body {
     text-align: center;
 }
 
-.events h2 {
+.events h2,
+.joincards h2 {
     background-color: #93DA24;
 }
 
@@ -171,7 +173,8 @@ body {
     display: flex;
 }
 
-.cards {
+.cards,
+.joincards {
     display: block;
     justify-items: center;
     margin-top: 0.5em;
