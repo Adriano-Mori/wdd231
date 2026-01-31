@@ -3,7 +3,7 @@ const closeModal = document.querySelectorAll('.close-modal')
 modal.forEach(link => {
     link.addEventListener("click", event => {
         event.preventDefault();
-        const dialog = document.querySelector(link.getAttribute("href"));
+        const dialog = document.querySelector(link.getAttribute("data-modal"));
         dialog.showModal();
     });
 });
