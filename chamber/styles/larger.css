@@ -109,6 +109,7 @@
         gap: 2rem;
         margin: 2rem auto;
         padding: 1rem;
+        align-content: stretch;
     }
 
     .form,
@@ -124,6 +125,12 @@
 
     .membercards {
         margin-bottom: 0;
+
+    }
+
+    .membercards section div {
+        align-content: center;
+        height: 150px;
     }
 
     .form button {
