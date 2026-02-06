@@ -1,0 +1,52 @@
+:root {
+    --gunmetal: #404040;
+    --burnt-tangerine: #ED361A;
+    --orange: #FEA82F;
+    --ash-gray: #9BC1BC;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: 'ABeeZee', sans-serif;
+    background-color: var(--white);
+    color: var(--gunmetal);
+}
+
+main {
+    margin-block: 1.5em;
+    margin-inline: 2em;
+}
+
+header,
+footer {
+    background-color: var(--gunmetal);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--burnt-tangerine);
+    margin-top: 0;
+}
+
+p,
+li {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+a {
+    color: var(--burnt-tangerine);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--orange);
+}
