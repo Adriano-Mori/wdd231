@@ -1,0 +1,21 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+    .place-content {
+        grid-template-areas:
+            "a a"
+            "b d"
+            "c c"
+            "e e";
+    }
+
+    .place-card p {
+        text-align: left;
+        margin-inline: 1em;
+        margin-top: 1em;
+        font-size: large;
+    }
+
+    .place-card button {
+        padding-block: 0.6em;
+    }
+
+}

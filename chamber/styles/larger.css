@@ -1,4 +1,4 @@
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:1025px) {
 
 
     .header-bar {
@@ -33,6 +33,12 @@
     }
 
     /*body*/
+    .title p {
+        text-align: left;
+        margin-left: 2em;
+        font-size: larger;
+        
+    }
 
     .title h1,
     .hero,
@@ -135,6 +141,66 @@
 
     .form button {
         margin-left: 10px;
+    }
+
+    /*DISCOVER*/
+
+    .discover-grid {
+        column-gap: 1em;
+        display: grid;
+        grid-template-areas:
+            "c1 c2"
+            "c3 c4"
+            "c5 c6"
+            "c7 c8";
+    }
+
+    .card1 {
+        grid-area: c1;
+    }
+
+    .card2 {
+        grid-area: c2;
+    }
+
+    .card3 {
+        grid-area: c3;
+    }
+
+    .card4 {
+        grid-area: c4;
+    }
+
+    .card5 {
+        grid-area: c5;
+    }
+
+    .card6 {
+        grid-area: c6;
+    }
+
+    .card7 {
+        grid-area: c7;
+    }
+
+    .card8 {
+        grid-area: c8;
+    }
+
+    .place-content {
+        max-height: 400px;
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "b d"
+            "c c"
+            "e e";
+    }
+
+    .place-content img {
+        width: 300px;
+        height: 240px;
+        object-fit: cover;
     }
 
     /*THX*/

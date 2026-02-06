@@ -17,6 +17,8 @@ function displayMembers(members) {
 
     spotlightMembers.forEach(member => {
         const card = document.createElement("article");
+        card.classList.add("member-card",)
+
         let membershipLabel = "";
         if (member.membershipLevel == 3) {
             membershipLabel = "Gold"

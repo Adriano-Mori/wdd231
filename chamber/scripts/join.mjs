@@ -1,3 +1,7 @@
+import { navBar, footerInfo } from "./footer.mjs";
+navBar();
+footerInfo();
+
 const modal = document.querySelectorAll('.open-modal')
 const closeModal = document.querySelectorAll('.close-modal')
 modal.forEach(link => {

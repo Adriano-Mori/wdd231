@@ -80,6 +80,11 @@ body {
     background-color: #E5EDF9;
 }
 
+.title {
+    display: grid;
+    text-align: center;
+}
+
 .title h1,
 .title h2 {
     color: #212121;
@@ -112,8 +117,8 @@ body {
     height: 300px;
 }
 
-
-.hero a.btn {
+.hero a.btn,
+.place-card button {
     display: block;
     margin-top: 1.5em;
     background-color: #93DA24;
@@ -184,7 +189,7 @@ body {
 }
 
 .cards section,
-article {
+.member-card {
     width: 100%;
     margin-block: 1em;
 }
@@ -193,7 +198,8 @@ article {
 
 .cards h2,
 .membercards h2,
-.spotlight h3 {
+.spotlight h3,
+.place-card h2 {
     text-align: center;
     padding: 1em;
     margin-bottom: 0;
@@ -201,7 +207,8 @@ article {
     border-top-right-radius: 10px;
 }
 
-.spotlight h3 {
+.spotlight h3,
+.place-card h2 {
     background-color: #93DA24;
 }
 
@@ -228,7 +235,7 @@ article {
 }
 
 /*horizontal alignment for imgand text*/
-article img {
+article>img {
     width: 125px;
     height: 125px;
     margin: 10px 25px 10px 10px;
@@ -405,7 +412,6 @@ dialog button:hover {
 /*THX*/
 .title p {
     margin-top: 2em;
-    margin-left: 2em;
 }
 
 .thx-container {
@@ -413,7 +419,106 @@ dialog button:hover {
     margin-bottom: 2em;
 }
 
+/*DISCOVER*/
 
+.discover-grid {
+    padding-inline: 1rem;
+    justify-items: center;
+    
+}
+
+.place-content {
+    display: grid;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1em;
+    box-shadow: 10px 10px 10px #0000001b;
+    margin-inline: auto;
+    /*anim*/
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: blockFadeRight 0.9s ease forwards;
+    /*grid*/
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+}
+
+.place-card h2 {
+    grid-area: a;
+    text-align: left;
+}
+
+.place-content {
+    text-align: center;
+}
+
+.place-card figure {
+    grid-area: b;
+    margin: 0;
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.place-card address {
+    grid-area: c;
+    margin-top: 1em;
+}
+
+.place-card p {
+    grid-area: d;
+}
+
+.place-card button {
+    grid-area: e;
+}
+
+/*animation*/
+.place-card {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: cardFadeLeft 0.8s ease forwards;
+}
+
+.place-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.place-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.place-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.place-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.place-card:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.place-card:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.place-card:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.place-card:nth-child(8) {
+    animation-delay: 1.4s;
+}
 
 /*DIRECTORY*/
 .view-controls {
@@ -437,7 +542,6 @@ dialog button:hover {
     cursor: pointer;
     background-color: #ffffff;
 }
-
 
 /* GRID VIEW */
 

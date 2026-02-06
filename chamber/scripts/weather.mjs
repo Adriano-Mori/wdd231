@@ -1,3 +1,7 @@
+import { navBar, footerInfo } from "./footer.mjs";
+navBar();
+footerInfo();
+
 const currentWeather = document.querySelector('#weather-data');
 const weatherForecast = document.querySelector('#forecast-data');
 const weatherIcon = document.querySelector('#weather-icon');

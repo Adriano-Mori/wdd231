@@ -1,3 +1,7 @@
+import { navBar, footerInfo } from "./footer.mjs";
+navBar();
+footerInfo();
+
 const params = new URLSearchParams(window.location.search);
 
 document.getElementById("firstName").value = params.get("firstName") || "";
