@@ -433,6 +433,7 @@ dialog button:hover {
 }
 
 .place-content {
+    text-align: center;
     display: grid;
     background-color: #ffffff;
     border-bottom-left-radius: 10px;
@@ -458,9 +459,6 @@ dialog button:hover {
     text-align: left;
 }
 
-.place-content {
-    text-align: center;
-}
 
 .place-card figure {
     grid-area: b;
