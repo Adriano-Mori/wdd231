@@ -421,15 +421,11 @@ dialog button:hover {
 
 /*DISCOVER*/
 
-
-.place-card {
-    min-height: 520px;
-}
-
 .discover-grid {
+    min-height: 900px;
     padding-inline: 1rem;
     justify-items: center;
-
+    margin-bottom: 1em;
 }
 
 .place-content {
@@ -468,7 +464,6 @@ dialog button:hover {
 }
 
 .place-card img {
-    aspect-ratio: 4 / 3;
     object-fit: cover;
     width: 100%;
     height: auto;

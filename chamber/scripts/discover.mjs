@@ -46,3 +46,6 @@ if (!lastVisit) {
 localStorage.setItem("lastVisit", now);
 
 footerInfo();
+window.addEventListener("load", () => {
+    document.body.classList.add("animate");
+});
