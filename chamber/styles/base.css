@@ -428,6 +428,10 @@ dialog button:hover {
     margin-bottom: 1em;
 }
 
+.discover-grid>h2 {
+    grid-area: h;
+}
+
 .place-content {
     display: grid;
     background-color: #ffffff;
