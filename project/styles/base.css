@@ -19,7 +19,7 @@ header {
     color: var(--orange);
     cursor: pointer;
     font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
 }
 
 .hamburger::before {
@@ -115,7 +115,7 @@ header {
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #ED361A;
+    background-color: var(--burnt-tangerine);
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
@@ -126,7 +126,8 @@ header {
 
 .featured,
 .promotions,
-.why-us {
+.why-us,
+.location {
     display: block;
     text-align: center;
     padding: 2.5rem 0.1rem 1.5rem;
@@ -187,14 +188,27 @@ header {
 /*why us*/
 .why-us {
     background-color: var(--ash-gray);
-    align-items: center;
+
 }
 
-.why-us p {
+.why-us p,
+.location p {
     font-size: large;
 }
 
 .why-us img {
+    display: block;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.262);
+}
+
+.why-us .btn {
+    background-color: var(--orange);
+}
+
+/*order*/
+.ordernow {
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
