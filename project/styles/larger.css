@@ -1,0 +1,65 @@
+@media only screen and (min-width:1024px) {
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding-inline: 1em;
+
+    }
+
+    .header-content {
+        display: block;
+    }
+
+    .header-content img {
+        width: 220px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        width: auto;
+        display: block;
+        padding-top: 2.5em;
+        position: initial;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        font-size: larger;
+    }
+
+    .navigation li:not(.current) a:hover {
+        color: var(--gunmetal);
+        border-radius: 10px;
+        background-color: var(--ash-gray);
+    }
+
+    .navigation li {
+        padding-inline: 10px;
+        border-radius: 10px;
+        width: 180px;
+
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .hero {
+        min-height: 100vh;
+        text-align: left;
+    }
+
+    .featured {
+        display: grid;
+    }
+
+    .featured figure {
+        display: flex;
+        flex-direction: row;
+    }
+}
