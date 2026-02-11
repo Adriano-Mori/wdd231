@@ -34,6 +34,7 @@
 
     .navigation li:not(.current) a:hover {
         color: var(--gunmetal);
+        transition: 0.2s;
         border-radius: 10px;
         background-color: var(--ash-gray);
     }
@@ -61,5 +62,19 @@
     .featured figure {
         display: flex;
         flex-direction: row;
+    }
+
+    footer {
+        display: grid;
+        text-align: justify;
+        padding-inline: 3em;
+        grid-template-areas:
+            "a b c d"
+            "e e e e";
+    }
+
+    .footer-bottom {
+        grid-area: e;
+        text-align: center;
     }
 }

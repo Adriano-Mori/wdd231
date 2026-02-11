@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    margin-block: 1.5em;
+    margin-block: 0;
 }
 
 header,
@@ -34,8 +34,19 @@ h3 {
 }
 
 p,
-li {
+li,
+a {
     font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+
+}
+
+a {
+    color: var(--white);
+}
+
+ul {
+    list-style-type: none;
 }
 
 .divider {
