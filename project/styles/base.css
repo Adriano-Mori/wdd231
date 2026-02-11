@@ -202,6 +202,7 @@ header {
 .why-us img {
     display: block;
     border-radius: 10px;
+    width: 400px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.262);
 }
 
@@ -227,7 +228,7 @@ footer {
         "d"
         "e";
     padding-inline: 1em;
-    padding-block: 3em;
+    padding-block: 2em;
     font-size: larger;
 }
 

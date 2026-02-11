@@ -26,7 +26,8 @@ footer {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
     color: var(--burnt-tangerine);
     margin-top: 0;
