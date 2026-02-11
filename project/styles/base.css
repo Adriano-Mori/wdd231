@@ -49,9 +49,6 @@ header {
 
 .navigation ul {
     text-align: center;
-
-    margin: 0;
-    padding: 0;
 }
 
 .navigation a {
@@ -231,11 +228,17 @@ footer {
         "e";
     padding-inline: 1em;
     padding-block: 3em;
+    font-size: larger;
 }
 
 footer h4 {
     color: var(--orange);
 }
+
+footer li {
+    margin-block: 1em;
+}
+
 
 
 .footer-logo {
@@ -245,13 +248,11 @@ footer h4 {
 
 .footer-nav {
     grid-area: b;
-
-
 }
+
 
 .footer-contact {
     grid-area: c;
-
 }
 
 .footer-locations {
@@ -261,5 +262,5 @@ footer h4 {
 
 .footer-bottom {
     grid-area: e;
-
+    color: #9b9b9b
 }
