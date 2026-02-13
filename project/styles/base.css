@@ -175,7 +175,7 @@ header {
 
 .promotions,
 .menu2,
-.menu4 {
+.menu5 {
     background-color: var(--gunmetal);
 }
 
@@ -185,7 +185,8 @@ header {
 
 .promotions .one-line,
 .menu2 .one-line,
-.menu4 .one-line {
+.menu5 .one-line,
+.menu6 .one-line {
 
     &:before,
     &:after {
@@ -221,6 +222,7 @@ header {
 /*MENU*/
 .menu-section {
     padding: 2.5rem 1rem;
+    text-align: center;
 }
 
 .menu-section h2 {
@@ -232,7 +234,8 @@ header {
 
 
 .menu2 h2,
-.menu4 h2 {
+.menu5 h2,
+.menu6 h2 {
     color: var(--orange);
 }
 
@@ -265,6 +268,7 @@ header {
 
 /* Menu CTA */
 .menu1,
+.menu4,
 .menu-cta {
     text-align: center;
     padding: 3rem 1rem;

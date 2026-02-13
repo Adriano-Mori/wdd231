@@ -1,0 +1,80 @@
+    <section class="menu-section menu1">
+                <h2 class="divider line one-line">Chicken</h2>
+
+                <div class="menu-item">
+                    <h3>Whole Chicken <span class="price">S/ 75.00</span></h3>
+                    <p>Our signature fire-roasted chicken, crispy outside and juicy inside.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Half Chicken <span class="price">S/ 40.00</span></h3>
+                    <p>Perfect for sharing, served hot and freshly roasted.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Quarter Chicken <span class="price">S/ 25.00</span></h3>
+                    <p>Great portion with bold traditional flavor.</p>
+                </div>
+            </section>
+            <!--menu2-->
+            <section class="menu-section menu2">
+                <h2 class="divider line one-line">Combos</h2>
+
+                <div class="menu-item">
+                    <h3>Family Combo <span class="price">S/ 95.00</span></h3>
+                    <p>1 Whole chicken + fries + salad + 1.5L drink.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Half Chicken Combo <span class="price">S/ 55.00</span></h3>
+                    <p>Half chicken served with fries and fresh salad.</p>
+                </div>
+            </section>
+            <!--menu3-->
+            <section class="menu-section menu3">
+                <h2 class="divider line one-line">Sides</h2>
+
+                <div class="menu-item">
+                    <h3>French Fries <span class="price">S/ 12.00</span></h3>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Fresh Salad <span class="price">S/ 10.00</span></h3>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Fried Rice <span class="price">S/ 14.00</span></h3>
+                </div>
+            </section>
+            <!--menu4-->
+            <section class="menu-section menu4">
+                <h2 class="divider line one-line">Sauces</h2>
+
+                <div class="menu-item">
+                    <h3>Ají Sauce <span class="price">S/ 3.00</span></h3>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Rocoto Sauce <span class="price">S/ 3.00</span></h3>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Mayonnaise <span class="price">S/ 2.50</span></h3>
+                </div>
+            </section>
+            <!--menu5-->
+            <section class="menu-section menu5">
+                <h2 class="divider line one-line">Drinks</h2>
+
+                <div class="menu-item">
+                    <h3>Inca Kola <span class="price">S/ 6.00</span></h3>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Chicha Morada <span class="price">S/ 6.00</span></h3>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Soft Drinks <span class="price">S/ 5.00</span></h3>
+                </div>
+            </section>
