@@ -185,8 +185,7 @@ header {
 
 .promotions .one-line,
 .menu2 .one-line,
-.menu5 .one-line,
-.menu6 .one-line {
+.menu5 .one-line {
 
     &:before,
     &:after {
@@ -234,8 +233,7 @@ header {
 
 
 .menu2 h2,
-.menu5 h2,
-.menu6 h2 {
+.menu5 h2 {
     color: var(--orange);
 }
 
@@ -277,6 +275,7 @@ header {
 }
 
 .menu1 h2,
+.menu4 h2,
 .menu-cta h2 {
     color: var(--gunmetal);
     margin-bottom: 1rem;
