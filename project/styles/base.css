@@ -61,6 +61,7 @@ header {
 
 .navigation li.current {
     background: #535353;
+
 }
 
 .navigation li.current a {
@@ -68,7 +69,8 @@ header {
 }
 
 /*hero*/
-.hero {
+.hero,
+.hero-menu {
     position: relative;
     min-height: 80vh;
     display: grid;
@@ -77,7 +79,8 @@ header {
     overflow: hidden;
 }
 
-.hero img {
+.hero img,
+.hero-menu img {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -137,9 +140,7 @@ header {
 
 }
 
-.featured {
-    background-color: var(--ash-gray);
-}
+
 
 .cards {
     background-color: var(--white);
@@ -172,7 +173,9 @@ header {
     display: block;
 }
 
-.promotions {
+.promotions,
+.menu2,
+.menu4 {
     background-color: var(--gunmetal);
 }
 
@@ -180,7 +183,9 @@ header {
     color: var(--orange)
 }
 
-.promotions .one-line {
+.promotions .one-line,
+.menu2 .one-line,
+.menu4 .one-line {
 
     &:before,
     &:after {
@@ -189,10 +194,6 @@ header {
 }
 
 /*why us*/
-.why-us {
-    background-color: var(--ash-gray);
-
-}
 
 .why-us p,
 .location p {
@@ -202,7 +203,8 @@ header {
 .why-us img {
     display: block;
     border-radius: 10px;
-    width: 400px;
+    max-width: 100%;
+    height: auto;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.262);
 }
 
@@ -214,6 +216,70 @@ header {
 
 .location {
     padding-bottom: 4em;
+}
+
+/*MENU*/
+.menu-section {
+    padding: 2.5rem 1rem;
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--burnt-tangerine);
+}
+
+
+
+.menu2 h2,
+.menu4 h2 {
+    color: var(--orange);
+}
+
+/* Menu Items */
+.menu-item {
+    background-color: var(--white);
+    padding: 1.25rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: var(--burnt-tangerine);
+}
+
+.menu-item p {
+    color: var(--gunmetal);
+    line-height: 1.5;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--gunmetal);
+}
+
+/* Menu CTA */
+.menu1,
+.menu-cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--orange);
+    color: var(--gunmetal)
+}
+
+.menu1 h2,
+.menu-cta h2 {
+    color: var(--gunmetal);
+    margin-bottom: 1rem;
+}
+
+.menu-cta p {
+    margin-bottom: 1.5rem;
 }
 
 /*footer*/
@@ -263,5 +329,4 @@ footer li {
 
 .footer-bottom {
     grid-area: e;
-    color: #9b9b9b
 }

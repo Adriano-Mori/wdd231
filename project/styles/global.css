@@ -1,84 +1,84 @@
-:root {
-    --gunmetal: #404040;
-    --burnt-tangerine: #ED361A;
-    --orange: #FEA82F;
-    --ash-gray: #c3d7d5;
-    --white: #FFFFFF;
-}
-
-body {
-    margin: 0;
-    font-family: 'ABeeZee', sans-serif;
-    background-color: var(--white);
-    color: var(--gunmetal);
-}
-
-main {
-    margin-block: 0;
-}
-
-header,
-footer {
-    background-color: var(--gunmetal);
-    color: var(--white);
-
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--burnt-tangerine);
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-p,
-li,
-a {
-    font-family: 'ABeeZee', sans-serif;
-    text-decoration: none;
-
-}
-
-a {
-    color: var(--white);
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.divider {
-    display: flex;
-
-
-    &:before,
-    &:after {
-        content: "";
-        flex: 1;
-        margin-inline: 10em;
+    :root {
+        --gunmetal: #404040;
+        --burnt-tangerine: #dd361a;
+        --orange: #FEA82F;
+        --ash-gray: #c3d7d5;
+        --white: #FFFFFF;
     }
-}
 
-.line {
-    align-items: center;
-
-
-    &:before,
-    &:after {
-        height: 0.07em;
-        margin: 0 1em;
+    body {
+        margin: 0;
+        font-family: 'ABeeZee', sans-serif;
+        background-color: var(--white);
+        color: var(--gunmetal);
     }
-}
 
-.one-line {
+    main {
+        margin-block: 0;
+    }
 
-    &:before,
-    &:after {
+    header,
+    footer {
         background-color: var(--gunmetal);
+        color: var(--white);
+
     }
-}
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        color: var(--burnt-tangerine);
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p,
+    li,
+    a {
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+
+    }
+
+    a {
+        color: var(--white);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .divider {
+        display: flex;
+
+
+        &:before,
+        &:after {
+            content: "";
+            flex: 1;
+            margin-inline: 10em;
+        }
+    }
+
+    .line {
+        align-items: center;
+
+
+        &:before,
+        &:after {
+            height: 0.07em;
+            margin: 0 1em;
+        }
+    }
+
+    .one-line {
+
+        &:before,
+        &:after {
+            background-color: var(--gunmetal);
+        }
+    }
