@@ -1,0 +1,12 @@
+{
+    "locations": [
+        {
+            "local": "Lima",
+            "value": "LIM01"
+        },
+        {
+            "local": "Trujillo",
+            "value": "TRU01"
+        }
+    ]
+}

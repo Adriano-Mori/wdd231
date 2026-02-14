@@ -2,7 +2,7 @@
         --gunmetal: #404040;
         --burnt-tangerine: #dd361a;
         --orange: #FEA82F;
-        --ash-gray: #c3d7d5;
+        --ash-gray: #c1e1de;
         --white: #FFFFFF;
     }
 
@@ -36,7 +36,8 @@
 
     p,
     li,
-    a {
+    a,
+    button {
         font-family: 'ABeeZee', sans-serif;
         text-decoration: none;
 

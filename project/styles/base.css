@@ -70,7 +70,8 @@ header {
 
 /*hero*/
 .hero,
-.hero-menu {
+.hero-menu,
+.hero-contact {
     position: relative;
     min-height: 80vh;
     display: grid;
@@ -80,7 +81,8 @@ header {
 }
 
 .hero img,
-.hero-menu img {
+.hero-menu img,
+.hero-contact img {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -112,8 +114,10 @@ header {
     line-height: 1.6;
 }
 
-.btn {
+.btn,
+.form button {
     display: inline-block;
+    border: none;
     background-color: var(--burnt-tangerine);
     padding: 0.75rem 1.5rem;
     color: #ffffff;
@@ -123,7 +127,8 @@ header {
     border-radius: 0.5rem;
 }
 
-.btn:hover {
+.btn:hover,
+.form button:hover {
     transition: 0.2s;
     background-color: var(--orange);
 }
@@ -185,7 +190,9 @@ header {
 
 .promotions .one-line,
 .menu2 .one-line,
-.menu5 .one-line {
+.menu5 .one-line,
+.form h2,
+.thx-container h2 {
 
     &:before,
     &:after {
@@ -218,7 +225,7 @@ header {
     padding-bottom: 4em;
 }
 
-/*MENU*/
+/*      MENU     */
 .menu-section {
     padding: 2.5rem 1rem;
     text-align: center;
@@ -237,7 +244,7 @@ header {
     color: var(--orange);
 }
 
-/* Menu Items */
+/* menu items */
 .menu-item {
     background-color: var(--white);
     padding: 1.25rem;
@@ -264,7 +271,7 @@ header {
     color: var(--gunmetal);
 }
 
-/* Menu CTA */
+/* menu CTA */
 .menu1,
 .menu4,
 .menu-cta {
@@ -285,7 +292,122 @@ header {
     margin-bottom: 1.5rem;
 }
 
-/*footer*/
+/*    CONTACT (AND THX)   */
+.contact-container {
+    display: block;
+}
+
+
+.form,
+.thx-container {
+    background-color: var(--gunmetal);
+    padding: 2.5rem 0.1rem 1.5rem;
+    text-align: center;
+}
+
+.form h2,
+.thx-container h2 {
+    color: var(--orange)
+}
+
+.form h3 {
+    color: var(--ash-gray);
+
+    &:before,
+    &:after {
+        background-color: var(--ash-gray);
+    }
+}
+
+.form p,
+.thx-container p {
+    font-size: large;
+    color: var(--white);
+    margin-bottom: 3em;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+    color: var(--ash-gray)
+}
+
+.form-fields .form-field,
+.thx-container form .form-field {
+    color: var(--gunmetal);
+    font-weight: bold;
+}
+
+input,
+textarea,
+select,
+#description {
+    padding: 15px 10px 15px;
+    border-radius: 5px;
+    color: var(--gunmetal);
+    border: solid var(--ash-gray) 2px;
+    font-size: larger;
+}
+
+.form-fields,
+.thx-container form {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.form button {
+
+    padding-inline: 3rem;
+    margin-top: 1em;
+}
+
+option {
+    font-size: medium;
+}
+
+/*addinfo*/
+#service-extra-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+#service-extra-info .delivery-options img:not(.banner-delivery) {
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/*   THANKS    */
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #d5d5d5;
+    color: #151515c7;
+    cursor: not-allowed;
+}
+
+.thx-container {
+    padding-bottom: 1em;
+}
+
+.after-form {
+    text-align: center;
+    padding-block: 3em;
+}
+
+/*    FOOTER   */
 footer {
     margin: 0;
     display: grid;
@@ -298,7 +420,7 @@ footer {
         "e";
     padding-inline: 1em;
     padding-block: 2em;
-    font-size: larger;
+    font-size: 17px;
 }
 
 footer h4 {

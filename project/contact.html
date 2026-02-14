@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact | DON POLLO: Chicken & Grill</title>
+    <meta name="description" content="Planning page of Don Pollo, ficticious peruvian resturant">
+    <meta name="author" content="Alex Mori">
+    <!--social meta tags will go here-->
+    <meta property="og:title" content="Contact | Nuevo Chimbote Chamber of Commerce">
+    <meta property="og:description" content="Contact page for the Nuevo Chimbote Chamber of Commerce.">
+    <meta property="og:image" content="https://adriano-mori.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://adriano-mori.github.io/wdd231/chamber/index.html">
+    <!-- -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/toggle.js" defer></script>
+    <script type="module" src="scripts/form.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html">
+                <img src="images/Logo3.png" alt="Don Pollo site logo" width="200">
+            </a>
+            <button id="nav-btn" class="hamburger" aria-label="hamburger button"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="current"><a href="contact.html">Contact & Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-contact">
+
+            <img src="images/hero-3.jpg" alt="roasted chicken served with fries and sauce">
+            <div class="hero-image"></div>
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+            </div>
+        </section>
+        <div class="contact-content">
+            <div class="contact-container">
+                <section class="form">
+                    <h2 class="divider line one-line">Make a Reservation<br> or<br>Contact Us for Delivery </h2>
+                    <p>Welcome to Don Pollo: Chicken & Grill! Complete the form and make your reservation or you can
+                        contact
+                        us for delivery.
+                    </p>
+                    <form method="get" action="thankyou.html">
+                        <div class="form-field">
+
+                            <h3 class="divider line one-line">Choose an option</h3>
+                            <label>
+                                <input type="radio" name="serviceType" value="reservation" checked>
+                                Make a Reservation
+                            </label>
+                            <label>
+                                <input type="radio" name="serviceType" value="delivery">
+                                Order Delivery
+                            </label>
+
+                        </div>
+                        <div class="form-fields">
+                            <div class="form-field">
+                                <label for="name">Your Name: </label><input type="text" id="name" name="name"
+                                    title="Type your name." autocomplete="given-name" required="required"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email Address: </label><input type="email" id="email" name="email"
+                                    title="Enter a valid email address" autocomplete="email"
+                                    placeholder="example@email.com" required="required">
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Mobile Phone: </label><input type="tel" id="phone" name="phone"
+                                    title="Enter your mobile phone number" autocomplete="tel" required="required"
+                                    placeholder="Phone number">
+                            </div>
+                            <!--reservation-->
+                            <div id="reservation-fields">
+                                <div class="form-field">
+                                    <label for="location">Location</label>
+                                    <select id="location" name="location" title="Select your location.">
+                                        <option value="">Select a Location</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="numberPeople">Number of People</label><input type="text"
+                                        id="numberPeople" name="numberPeople" title="Enter the number of People"
+                                        placeholder="Number of people">
+                                </div>
+                                <div class="form-field">
+                                    <label for="date">Date of Reservation</label>
+                                    <input type="date" id="date" name="date" title="Enter the date of reservation">
+                                </div>
+                            </div>
+                            <!--delivery-->
+                            <div class="delivery-fields" id="delivery-fields" style="display:none;">
+                                <div class="form-field">
+                                    <label for="address">Delivery Address</label>
+                                    <input type="text" id="address" name="address" title="Enter your address">
+                                </div>
+                                <div class="form-field">
+                                    <label for="payingMethod">Paying method</label>
+                                    <select id="payingMethod" name="payingMethod">
+                                        <option value="">Select a method</option>
+                                        <option value="cash">Cash</option>
+                                        <option value="card">Card</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"
+                                    title="Give us some additional comments if you'd like!" rows="7"></textarea>
+                            </div>
+                            <input type="hidden" id="timestamp" name="timestamp">
+                            <button type="submit">Send Info</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div id="service-extra-info">
+                <section class="locations-info">
+                    <h2>Available Locations</h2>
+                    <ul>
+                        <li>Lima</li>
+                        <li>Trujillo</li>
+                        <li>Arequipa</li>
+                    </ul>
+                </section>
+            </div>
+
+
+        </div>
+        <section class="hero-contact">
+
+            <img src="images/hero-4.jpg" alt="roasted chicken served with fries and sauce">
+            <div class="hero-image"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/Logo4.png" alt="Don Pollo's logo" width="140">
+        </div>
+
+        <nav class="footer-nav">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact & Locations</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Phone: +51 999 123 456</p>
+            <p>Email: info@donpollo.pe</p>
+        </div>
+
+        <div class="footer-locations">
+            <h4>Our Locations</h4>
+            <p>Serving multiple cities across Peru</p>
+        </div>
+
+        <div class="footer-bottom">
+            <h4>© <span id="year"></span> ◆ Don Pollo ◆ Peru.<br> All rights reserved.</h4>
+            <p>Alex Mori | WDD231 <br>Last Modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
