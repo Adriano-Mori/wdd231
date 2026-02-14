@@ -62,9 +62,19 @@
         min-height: 75vh;
     }
 
+    .action-card {
+        display: none;
+    }
+
+    .card-indications p::before {
+        content: "🠋 Click on ";
+
+    }
+
     .hero-contact {
         min-height: 70vh;
     }
+
 
     .featured {
         display: grid;
@@ -77,52 +87,88 @@
 
     /*menu*/
 
-    /**/
+    /*contact*/
+    /*--------------WARNING---------*/
+    /*I SHOULDN'T TOUCH THIS ANYMORE OR ELSE IT'LL BREAK SO BAD*/
     .contact-content {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         gap: 0px;
+        border-bottom: solid var(--orange) 20px;
     }
 
     .contact-container {
         flex: 1;
     }
 
+    .form-fields .form-field {
+        text-align: left;
+    }
+
     #service-extra-info {
         flex: 1;
-    }
-
-    .form-fields .form-field {
-
-        text-align: left;
-
-    }
-
-    #service-extra-info {
+        max-width: 100%;
         padding: 2em;
         text-align: center;
         display: flex;
         flex-direction: column;
     }
 
-    .locations-info,
-    .delivery-options {
+
+    .locations-info {
         display: grid;
         flex-direction: column;
     }
 
-    #service-extra-info .delivery-options img:not(.banner-delivery) {
-        text-align: center;
-        display: block;
+    .delivery-options {
+        flex-direction: column;
+    }
+
+    #service-extra-info {
+        padding: 0;
+    }
+
+    .reservation-content,
+    .delivery-options {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        height: 160px;
-        object-fit: cover;
-        margin-block: 0.8em;
 
     }
 
+    #service-extra-info .delivery-options img {
+        text-align: center;
+        display: block;
+        width: 98%;
+        height: 160px;
+        object-fit: cover;
+        margin-block: 1.2em;
+    }
 
+    .reservation-content h2 {
+        font-size: xx-large;
+    }
 
+    .reservation-hero {
+        padding: 0;
+    }
+
+    #service-extra-info .reservation-hero {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 3rem;
+    }
+
+    #service-extra-info .reservation-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+    /*--*/
+    /**/
     footer {
         display: grid;
         text-align: left;

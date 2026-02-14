@@ -83,3 +83,9 @@
             background-color: var(--gunmetal);
         }
     }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
