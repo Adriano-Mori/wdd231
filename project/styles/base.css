@@ -190,16 +190,17 @@ header {
     color: var(--orange)
 }
 
-.promotions .one-line,
-.menu2 .one-line,
-.menu5 .one-line,
-.form h2,
-.thx-container h2 {
-
-    &:before,
-    &:after {
-        background-color: var(--orange);
-    }
+.promotions .one-line::before,
+.promotions .one-line::after,
+.menu2 .one-line::before,
+.menu2 .one-line::after,
+.menu5 .one-line::before,
+.menu5 .one-line::after,
+.form h2::before,
+.form h2::after,
+.thx-container h2::before,
+.thx-container h2::after {
+    background-color: var(--orange);
 }
 
 /*why us*/
@@ -337,7 +338,8 @@ header {
 
 .menu1 h2,
 .menu4 h2,
-.menu-cta h2 {
+.menu-cta h2,
+.menu-cta h3 {
     color: var(--gunmetal);
     margin-bottom: 1rem;
 }
@@ -371,11 +373,11 @@ header {
 
 .form h3 {
     color: var(--ash-gray);
+}
 
-    &:before,
-    &:after {
-        background-color: var(--ash-gray);
-    }
+.form h3::before,
+.form h3::after {
+    background-color: var(--ash-gray);
 }
 
 .form p,
