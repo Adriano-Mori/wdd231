@@ -1,12 +1,52 @@
 {
     "locations": [
         {
-            "local": "Lima",
+            "local": "Lima - Miraflores",
             "value": "LIM01"
+        },
+        {
+            "local": "Lima - San Isidro",
+            "value": "LIM02"
+        },
+        {
+            "local": "Lima - Surco",
+            "value": "LIM03"
+        },
+        {
+            "local": "Lima - Los Olivos",
+            "value": "LIM04"
+        },
+        {
+            "local": "Lima - San Miguel",
+            "value": "LIM05"
         },
         {
             "local": "Trujillo",
             "value": "TRU01"
+        },
+        {
+            "local": "Arequipa",
+            "value": "ARE01"
+        },
+        {
+            "local": "Cusco",
+            "value": "CUS01"
+        },
+        {
+            "local": "Piura",
+            "value": "PIU01"
+        },
+        {
+            "local": "Chiclayo",
+            "value": "CHI01"
+        },
+        {
+            "local": "Iquitos",
+            "value": "IQU01"
+        },
+        {
+            "local": "Huancayo",
+            "value": "HUA01"
         }
     ]
 }
