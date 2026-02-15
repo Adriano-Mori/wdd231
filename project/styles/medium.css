@@ -1,0 +1,44 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .featured-content,
+    .promotions-content {
+        display: flex;
+        column-gap: 10px;
+        padding-inline: 10px;
+    }
+
+    .cards {
+        margin-inline: 0;
+        display: grid;
+        grid-template-areas:
+
+            "pic"
+            "desc"
+            "ttl";
+    }
+
+    .featured-content .cards,
+    .promotions-content .cards {
+        flex: 1;
+    }
+
+    .menu-items-wrapper {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .menu-item {
+        flex: 1;
+        grid-template-areas:
+            "h3 prc"
+            "des des";
+    }
+
+    #service-extra-info {
+        justify-content: center;
+    }
+    
+}

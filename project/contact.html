@@ -21,10 +21,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/toggle.js" defer></script>
     <script type="module" src="scripts/form.mjs"></script>
+    <script src="scripts/anim.js" defer></script>
 </head>
 
 <body>
@@ -48,97 +50,99 @@
 
             <img src="images/hero-3.jpg" alt="roasted chicken served with fries and sauce">
             <div class="hero-image"></div>
-            <div class="hero-content">
+            <div class="hero-content reveal slide-right">
                 <h1>Contact Us</h1>
             </div>
         </section>
         <div class="contact-content">
             <div class="contact-container">
                 <section class="form">
-                    <h2 class="divider line one-line">Make a Reservation<br> or<br>Contact Us for Delivery </h2>
-                    <p>Welcome to Don Pollo: Chicken & Grill! Complete the form and make your reservation or you can
-                        contact
-                        us for delivery.
-                    </p>
-                    <form method="get" action="thankyou.html">
-                        <div class="form-field">
+                    <div class="reveal slide-left">
+                        <h2 class="divider line one-line">Make a Reservation<br> or<br>Contact Us for Delivery </h2>
+                        <p>Welcome to Don Pollo: Chicken & Grill! Complete the form and make your reservation or you can
+                            contact
+                            us for delivery.
+                        </p>
+                        <form method="get" action="thankyou.html">
+                            <div class="form-field reveal slide-left">
 
-                            <h3 class="divider line one-line">Choose an option</h3>
-                            <label>
-                                <input type="radio" name="serviceType" value="reservation" checked>
-                                Make a Reservation
-                            </label>
-                            <label>
-                                <input type="radio" name="serviceType" value="delivery">
-                                Order Delivery
-                            </label>
+                                <h3 class="divider line one-line">Choose an option</h3>
+                                <label>
+                                    <input type="radio" name="serviceType" value="reservation" checked>
+                                    Make a Reservation
+                                </label>
+                                <label>
+                                    <input type="radio" name="serviceType" value="delivery">
+                                    Order Delivery
+                                </label>
 
-                        </div>
-                        <div class="form-fields">
-                            <div class="form-field">
-                                <label for="name">Your Name: </label><input type="text" id="name" name="name"
-                                    title="Type your name." autocomplete="given-name" required="required"
-                                    placeholder="Enter your name">
                             </div>
-                            <div class="form-field">
-                                <label for="email">Email Address: </label><input type="email" id="email" name="email"
-                                    title="Enter a valid email address" autocomplete="email"
-                                    placeholder="example@email.com" required="required">
-                            </div>
-                            <div class="form-field">
-                                <label for="phone">Mobile Phone: </label><input type="tel" id="phone" name="phone"
-                                    title="Enter your mobile phone number" autocomplete="tel" required="required"
-                                    placeholder="Phone number">
-                            </div>
-                            <!--reservation-->
-                            <div id="reservation-fields">
+                            <div class="form-fields">
                                 <div class="form-field">
-                                    <label for="location">Location</label>
-                                    <select id="location" name="location" title="Select your location.">
-                                        <option value="">Select a Location</option>
-                                    </select>
+                                    <label for="name">Your Name: </label><input type="text" id="name" name="name"
+                                        title="Type your name." autocomplete="given-name" required="required"
+                                        placeholder="Enter your name">
                                 </div>
                                 <div class="form-field">
-                                    <label for="numberPeople">Number of People</label><input type="text"
-                                        id="numberPeople" name="numberPeople" title="Enter the number of People"
-                                        placeholder="Number of people">
+                                    <label for="email">Email Address: </label><input type="email" id="email"
+                                        name="email" title="Enter a valid email address" autocomplete="email"
+                                        placeholder="example@email.com" required="required">
                                 </div>
                                 <div class="form-field">
-                                    <label for="date">Date of Reservation</label>
-                                    <input type="date" id="date" name="date" title="Enter the date of reservation">
+                                    <label for="phone">Mobile Phone: </label><input type="tel" id="phone" name="phone"
+                                        title="Enter your mobile phone number" autocomplete="tel" required="required"
+                                        placeholder="Phone number">
                                 </div>
-                            </div>
-                            <!--delivery-->
-                            <div class="delivery-fields" id="delivery-fields" style="display:none;">
+                                <!--reservation-->
+                                <div id="reservation-fields">
+                                    <div class="form-field">
+                                        <label for="location">Location</label>
+                                        <select id="location" name="location" title="Select your location.">
+                                            <option value="">Select a Location</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="numberPeople">Number of People</label><input type="text"
+                                            id="numberPeople" name="numberPeople" title="Enter the number of People"
+                                            placeholder="Number of people">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="date">Date of Reservation</label>
+                                        <input type="date" id="date" name="date" title="Enter the date of reservation">
+                                    </div>
+                                </div>
+                                <!--delivery-->
+                                <div class="delivery-fields" id="delivery-fields" style="display:none;">
+                                    <div class="form-field">
+                                        <label for="address">Delivery Address</label>
+                                        <input type="text" id="address" name="address" title="Enter your address">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="payingMethod">Paying method</label>
+                                        <select id="payingMethod" name="payingMethod">
+                                            <option value="">Select a method</option>
+                                            <option value="cash">Cash</option>
+                                            <option value="card">Card</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="form-field">
-                                    <label for="address">Delivery Address</label>
-                                    <input type="text" id="address" name="address" title="Enter your address">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message"
+                                        title="Give us some additional comments if you'd like!" rows="7"></textarea>
                                 </div>
-                                <div class="form-field">
-                                    <label for="payingMethod">Paying method</label>
-                                    <select id="payingMethod" name="payingMethod">
-                                        <option value="">Select a method</option>
-                                        <option value="cash">Cash</option>
-                                        <option value="card">Card</option>
-                                    </select>
-                                </div>
+                                <input type="hidden" id="timestamp" name="timestamp">
+                                <button type="submit">Send Info</button>
                             </div>
-                            <div class="form-field">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message"
-                                    title="Give us some additional comments if you'd like!" rows="7"></textarea>
-                            </div>
-                            <input type="hidden" id="timestamp" name="timestamp">
-                            <button type="submit">Send Info</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </section>
             </div>
 
             <div id="service-extra-info">
                 <section class="locations-info reservation-hero" id="reservation-info">
                     <img src="images/reservation-bg.jpg">
-                    <div class="reservation-content">
+                    <div class="reservation-content reveal slide-right">
                         <h2 class="divider line one-line">Reserve Your Table Today!</h2>
                         <p>Enjoy our signature charcoal-grilled chicken in a cozy atmosphere.</p>
                         <p>-</p>
@@ -153,7 +157,7 @@
                     </div>
 
                 </section>
-                <section class="delivery-options" id="delivery-info" style="display:none;">
+                <section class="delivery-options reveal slide-up" id="delivery-info" style="display:none;">
                     <h2>Order through our delivery partners</h2>
                     <img src="images/glovo.png">
                     <img src="images/pedidosya.png">

@@ -5,126 +5,144 @@
             "name": "Whole Chicken",
             "price": 75.00,
             "description": "Our signature Pollo A la Brasa, crispy outside and juicy inside.",
-            "category": "Chicken"
+            "category": "Chicken",
+            "img": "images/whole-chicken.jpg"
         },
         {
             "id": 2,
             "name": "Half Chicken",
             "price": 40.00,
             "description": "Perfect for sharing, served hot and freshly roasted.",
-            "category": "Chicken"
+            "category": "Chicken",
+            "img": "images/half-chicken.jpg"
         },
         {
             "id": 3,
             "name": "Quarter Chicken",
             "price": 25.00,
             "description": "Great portion with bold traditional flavor.",
-            "category": "Chicken"
+            "category": "Chicken",
+            "img": "images/quarter-chicken.jpg"
         },
         {
             "id": 4,
             "name": "Family Combo",
             "price": 95.00,
             "description": "1 whole chicken + fries + salad + 1.5L drink.",
-            "category": "Combos"
+            "category": "Combos",
+            "img": "images/family-combo.jpg"
         },
         {
             "id": 5,
             "name": "Half Chicken Combo",
             "price": 55.00,
             "description": "Half chicken served with fries and fresh salad.",
-            "category": "Combos"
+            "category": "Combos",
+            "img": "images/half-chicken-combo.jpg"
         },
         {
             "id": 17,
             "name": "Mixed Grill Platter",
             "price": 65.00,
             "description": "Grilled steak, sausages and chicken served with fries.",
-            "category": "Grills"
+            "category": "Grills",
+            "img": "images/grill-mixed-platter.jpg"
         },
         {
             "id": 15,
             "name": "Grilled Pork Ribs",
             "price": 48.00,
             "description": "Slow-cooked ribs glazed with house BBQ sauce.",
-            "category": "Grills"
+            "category": "Grills",
+            "img": "images/ribs.jpg"
         },
         {
             "id": 16,
             "name": "Roasted Beef Brisket",
             "price": 52.00,
             "description": "Tender beef brisket roasted for hours.",
-            "category": "Grills"
+            "category": "Grills",
+            "img": "images/brisket.jpg"
         },
         {
             "id": 18,
             "name": "Grilled Steak",
             "price": 45.00,
             "description": "Juicy grilled steak seasoned with house spices.",
-            "category": "Grills"
+            "category": "Grills",
+            "img": "images/steak.jpg"
         },
         {
             "id": 6,
             "name": "French Fries",
             "price": 12.00,
             "description": "Golden crispy fries served hot.",
-            "category": "Sides"
+            "category": "Sides",
+            "img": "images/papitas.jpg"
         },
         {
             "id": 7,
             "name": "Fresh Salad",
             "price": 10.00,
             "description": "Fresh lettuce, tomato, cucumber and house dressing.",
-            "category": "Sides"
+            "category": "Sides",
+            "img": "images/salad.jpg"
         },
         {
             "id": 8,
             "name": "Fried Rice",
             "price": 14.00,
             "description": "Peruvian-style fried rice with vegetables.",
-            "category": "Sides"
+            "category": "Sides",
+            "img": "images/chaufita.png"
         },
         {
             "id": 9,
             "name": "Ají Sauce",
             "price": 3.00,
             "description": "Spicy traditional Peruvian yellow pepper sauce.",
-            "category": "Sauces"
+            "category": "Sauces",
+            "img": "images/aji.jpg"
         },
         {
             "id": 10,
             "name": "Rocoto Sauce",
             "price": 3.00,
             "description": "Bold and spicy rocoto pepper sauce.",
-            "category": "Sauces"
+            "category": "Sauces",
+            "img": "images/rocoto.jpg"
         },
         {
             "id": 11,
             "name": "Mayonnaise",
             "price": 2.50,
             "description": "Creamy house-made mayonnaise.",
-            "category": "Sauces"
+            "category": "Sauces",
+            "img": "images/mayo.jpg"
         },
         {
             "id": 12,
             "name": "Inca Kola",
             "price": 6.00,
             "description": "Classic Peruvian soft drink.",
-            "category": "Drinks"
+            "category": "Drinks",
+            "img": "images/inkacola.jpg"
         },
         {
             "id": 13,
             "name": "Chicha Morada",
             "price": 6.00,
             "description": "Traditional purple corn drink.",
-            "category": "Drinks"
+            "category": "Drinks",
+            "img": "images/chicha.jpg"
         },
         {
             "id": 14,
             "name": "Soft Drinks",
             "price": 5.00,
             "description": "Coca-Cola, Sprite or Fanta.",
-            "category": "Drinks"
+            "category": "Drinks",
+            "img": "images/softdrink.jpg"
         }
     ]
 }

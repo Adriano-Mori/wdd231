@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home | DON POLLO: Chicken & Grill</title>
-    <meta name="description" content="Planning page of Don Pollo, ficticious peruvian resturant">
+    <meta name="description"
+        content="Enjoy authentic Peruvian Pollo a la Brasa at Don Pollo. Golden, juicy, and fire-roasted to perfection. Reserve your table or order delivery today.">
     <meta name="author" content="Alex Mori">
     <!--social meta tags will go here-->
-    <meta property="og:title" content="Home | Nuevo Chimbote Chamber of Commerce">
-    <meta property="og:description" content="Homepage for the Nuevo Chimbote Chamber of Commerce.">
-    <meta property="og:image" content="https://adriano-mori.github.io/wdd231/chamber/images/logo.png">
-    <meta property="og:url" content="https://adriano-mori.github.io/wdd231/chamber/index.html">
+    <meta property="og:title" content="Don Pollo: Chicken & Grill | Authentic Pollo a la Brasa in Peru">
+    <meta property="og:description"
+        content="Enjoy authentic Peruvian Pollo a la Brasa. Golden, juicy, and fire-roasted to perfection. Reserve your table or order delivery today!">
+    <meta property="og:image" content="https://adriano-mori.github.io/wdd231/project/images/Logo1.png">
+    <meta property="og:url" content="https://adriano-mori.github.io/wdd231/project/index.html">
+    <meta property="og:type" content="website">
     <!-- -->
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +24,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/anim.js" defer></script>
 </head>
 
 <body>
@@ -46,63 +51,71 @@
 
             <img src="images/hero.jpg" alt="roasted chicken served with fries and sauce">
             <div class="hero-image"></div>
-            <div class="hero-content">
+            <div class="hero-content reveal slide-right">
                 <h1>Golden. Juicy. Exquisite.</h1>
                 <p>Authentic Pollo a la Brasa, roasted to perfection. Seasoned with our secret Peruvian spices.</p>
-                <a href="#" class="btn">Order Now</a>
+                <a href="menu.html" class="btn">See More</a>
             </div>
         </section>
         <section class="featured">
             <h2 class="divider line one-line">Featured Dishes</h2>
-            <figure class="cards">
-                <img src="images/whole-chicken.png" alt="Whole Roasted Chicken">
-                <figcaption>
-                    <h3>Whole Pollo a la Brasa</h3>
-                    <p>Our signature fire-roasted chicken, crispy outside and juicy inside.</p>
-                </figcaption>
-            </figure>
-            <figure class="cards">
-                <img src="images/half-chicken.png" alt="Half Roasted Chicken">
-                <figcaption>
-                    <h3>Half Chicken Combo</h3>
-                    <p>Half pollo a la brasa served with golden fries and fresh salad.</p>
-                </figcaption>
-            </figure>
-            <figure class="cards">
-                <img src="images/quarter-chicken.png" alt="A quarter of a Roasted Chicken">
-                <figcaption>
-                    <h3>Quarter Chicken Plate</h3>
-                    <p>Perfect personal-sized portion with fries, salad, and your favorite sauce.</p>
-                </figcaption>
-            </figure>
+            <div class="featured-content">
+                <figure class="cards reveal slide-up">
+                    <img src="images/whole-chicken.jpg" alt="Whole Roasted Chicken" loading="lazy">
+                    <figcaption>
+                        <h3>Whole Pollo a la Brasa</h3>
+                        <p>Our signature fire-roasted chicken, crispy outside and juicy inside.</p>
+                    </figcaption>
+                </figure>
+                <figure class="cards reveal slide-up">
+                    <img src="images/half-chicken.jpg" alt="Half Roasted Chicken" loading="lazy">
+                    <figcaption>
+                        <h3>Half Chicken Combo</h3>
+                        <p>Half pollo a la brasa served with golden fries and fresh salad.</p>
+                    </figcaption>
+                </figure>
+                <figure class="cards reveal slide-up">
+                    <img src="images/quarter-chicken.jpg" alt="A quarter of a Roasted Chicken" loading="lazy">
+                    <figcaption>
+                        <h3>Quarter Chicken Plate</h3>
+                        <p>Perfect personal-sized portion with fries, salad, and your favorite sauce.</p>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
 
         <section class="promotions">
+
             <h2 class="divider line one-line">Promotions</h2>
-            <figure class="cards">
-                <img src="images/half-chicken.png" alt="Half Roasted Chicken">
-                <figcaption>
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aliquam.</p>
-                </figcaption>
-            </figure>
-            <figure class="cards">
-                <img src="images/quarter-chicken.png" alt="A quarter of a Roasted Chicken">
-                <figcaption>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto ex, officiis itaque earum
-                        vel?
-                    </p>
-                </figcaption>
-            </figure>
+            <div class="promotions-content">
+                <figure class="cards reveal slide-up">
+                    <img src="images/steak.jpg" alt="family feast combo, steak and sauces">
+                    <figcaption>
+                        <h3>Family Feast Combo</h3>
+                        <p>Enjoy a whole Pollo a la Brasa with large fries, fresh salad, and a 1.5L drink — perfect for
+                            sharing with the whole
+                            family.</p>
+
+                    </figcaption>
+                </figure>
+                <figure class="cards reveal slide-up">
+                    <img src="images/grill-mixed-platter.jpg" alt="grill mixed platter">
+                    <figcaption>
+                        <h3>Weekday Special</h3>
+                        <p>From Monday to Thursday, get 15% off any combo meal. Great flavor at an even better price.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
         <article class="why-us">
             <h2 class="divider line one-line">Why Us</h2>
-            <figure>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum blanditiis saepe veritatis ea
-                    facilis
-                    voluptates expedita magnam minima laudantium odit natus reiciendis ut rerum iste ab eos, itaque,
-                    quibusdam</p>
+            <figure class="reveal slide-left">
+                <p>Don Pollo is more than just a meal, it's an experience. We carefully select our ingredients and use a
+                    slow charcoal
+                    roasting process. Every dish is made with passion. We bring families and friends together with bold
+                    Peruvian flavors
+                    and memorable moments.</p>
                 <img src="images/pollo-a-la-brasa-01.jpg"
                     alt="Roasted Chicken with fries, salad and sauces in the background.">
             </figure>
@@ -112,7 +125,7 @@
             <p>Enjoy our signature pollo a la brasa at locations in the country</p>
             <p><strong>Open daily: 12 PM - 10 PM
                 </strong></p>
-            <a href="#" class="btn">Your nearest location →</a>
+            <a href="contact.html" class="btn">Make a Reservation</a>
         </section>
 
     </main>

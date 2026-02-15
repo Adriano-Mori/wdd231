@@ -17,29 +17,57 @@ function displayMenuList(menuItems) {
         const section = document.createElement("section");
         section.classList.add("menu-section", `menu${index + 1}`);
         section.innerHTML =
-            ` 
-            <h2 class="divider line one-line">${category}</h2>
-        
-            `;
+            ` <h2 class="divider line one-line">${category}</h2>`;
+        const itemsWrapper = document.createElement("div");
+        itemsWrapper.classList.add("menu-items-wrapper");
+        section.appendChild(itemsWrapper);
+        //
         const filteredItems = menuItems.filter(item => item.category === category);
 
         menuListContainer.appendChild(section);
+
         filteredItems.forEach(item => {
 
             const card = document.createElement("div");
-            card.classList.add("menu-item");
+            card.classList.add("menu-item", `item${item.id}`, "reveal", "slide-down");
 
             card.innerHTML = `
-                <h3>
-                    ${item.name}
+                    <h3>
+                        ${item.name}
+                    
+                    </h3>
                     <span class="price">S/ ${item.price.toFixed(2)}</span>
-                </h3>
+                    <p>${item.description}</p>
+                `;
+            //dialog
+            const dialog = document.createElement("dialog");
+            dialog.classList.add("menu-dialog", "reveal", "slide-up");
+            dialog.innerHTML = `
+                <img src="${item.img}" alt="${item.name}" style="width:60%;">
+                <h3>${item.name}</h3>
+                <span class="price">S/ ${item.price.toFixed(2)}</span>
                 <p>${item.description}</p>
-            `;
+                <button class="close-btn">Close</button>
+        `;
+            document.body.appendChild(dialog);
 
-            section.appendChild(card);
+
+            card.addEventListener("click", () => {
+                observer.observe(dialog)
+                dialog.showModal();
+            });
+
+
+            dialog.querySelector(".close-btn").addEventListener("click", () => {
+                dialog.close();
+            });
+
+            itemsWrapper.appendChild(card);
+            observer.observe(card);
         });
+        ;
 
     });
+
 };
 getMenu();

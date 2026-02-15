@@ -51,6 +51,38 @@
         border: none;
     }
 
+
+
+    /*HOME*/
+
+
+    .featured-content,
+    .promotions-content {
+        display: flex;
+        column-gap: 10px;
+        padding-inline: 1em;
+    }
+
+    .cards {
+        margin-inline: 0;
+        display: grid;
+        grid-template-areas:
+            "ttl pic"
+            "dsc pic";
+    }
+
+    .cards img {
+        margin-bottom: 1em;
+        border-radius: 10px;
+    }
+
+    .featured-content .cards,
+    .promotions-content .cards {
+        flex: 1;
+    }
+
+    /*MENU*/
+
     .hero,
     .hero-menu,
     .hero-contact {
@@ -85,11 +117,39 @@
         flex-direction: row;
     }
 
-    /*menu*/
+    /*MENU*/
+    .menu-items-wrapper {
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        column-gap: 2em;
+    }
+
+    .menu-item {
+        flex: 1;
+        grid-template-areas:
+            "h3"
+            "des"
+            "prc";
+    }
+
+    .menu-item:hover {
+        cursor: pointer;
+    }
+
+    .menu-item h3,
+    .menu-item span {
+        text-align: center;
+    }
+
+    .menu-item p {
+        padding-inline: 2em;
+    }
+
 
     /*contact*/
     /*--------------WARNING---------*/
-    /*I SHOULDN'T TOUCH THIS ANYMORE OR ELSE IT'LL BREAK SO BAD*/
+    /*I SHOULDN'T TOUCH THIS ANYMORE OR ELSE I'LL BREAK IT MORE HELP*/
     .contact-content {
         display: flex;
         flex-wrap: wrap;
@@ -168,7 +228,13 @@
     }
 
     /*--*/
-    /**/
+    /*thx*/
+    .thx-container {
+        border-bottom: solid var(--orange) 20px;
+    }
+
+    /*footer*/
+
     footer {
         display: grid;
         text-align: left;
@@ -183,3 +249,4 @@
         text-align: center;
     }
 }
+

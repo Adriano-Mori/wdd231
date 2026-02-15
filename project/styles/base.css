@@ -1,7 +1,6 @@
 /*header*/
 header {
     position: relative;
-
 }
 
 .header-content {
@@ -35,8 +34,7 @@ header {
 .navigation {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+
     width: 100%;
     z-index: 100;
     background-color: var(--gunmetal);
@@ -59,10 +57,6 @@ header {
     border-top: solid 1px var(--orange);
 }
 
-.navigation li.current {
-    background: #535353;
-
-}
 
 .navigation li.current a {
     color: var(--orange);
@@ -145,15 +139,19 @@ header {
 
 }
 
-
-
 .cards {
     background-color: var(--white);
     border-radius: 10px;
     padding-top: 1em;
     padding-inline: 1em;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.262);
+    display: grid;
+    grid-template-areas:
+        "img"
+        "ttl"
+        "pic";
 }
+
 
 .cards figcaption {
     padding: 1.25rem;
@@ -163,19 +161,23 @@ header {
 .cards h3 {
     margin: 0.5rem 0;
     color: var(--burnt-tangerine);
+    grid-area: ttl;
 }
 
 .cards p {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--gunmetal);
+    grid-area: dsc;
 }
 
 .cards img {
     width: 100%;
     height: 200px;
+    margin-bottom: 1em;
     object-fit: cover;
     display: block;
+    grid-area: pic;
 }
 
 .promotions,
@@ -201,6 +203,13 @@ header {
 }
 
 /*why us*/
+.why-us {
+    background-color: var(--orange);
+}
+
+.why-us h2 {
+    color: var(--gunmetal);
+}
 
 .why-us p,
 .location p {
@@ -258,24 +267,62 @@ header {
     border-radius: 10px;
     margin-bottom: 1.5rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-areas:
+        "h3 prc"
+        "des des";
 }
 
 .menu-item h3 {
-    display: flex;
+    text-align: left;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 0.5rem;
     color: var(--burnt-tangerine);
-}
-
-.menu-item p {
-    color: var(--gunmetal);
-    line-height: 1.5;
+    grid-area: h3;
 }
 
 .price {
     font-weight: 600;
     color: var(--gunmetal);
+    text-align: right;
+    grid-area: prc;
+}
+
+.menu-item p {
+    color: var(--gunmetal);
+    line-height: 1.5;
+    grid-area: des;
+
+}
+
+/*menudialog*/
+.menu-dialog {
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+.menu-dialog img,
+.menu-dialog .close-btn {
+    border-radius: 10px;
+}
+
+.menu-dialog .close-btn {
+    border: none;
+    padding-block: 1em;
+    padding-inline: 3em;
+    font-size: large;
+    background-color: orange;
+}
+
+.menu-dialog .close-btn:hover {
+    cursor: pointer;
+}
+
+.menu-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 /* menu CTA */
@@ -297,6 +344,11 @@ header {
 
 .menu-cta p {
     margin-bottom: 1.5rem;
+}
+
+.menu-cta .btn:hover {
+    background-color: var(--gunmetal);
+    color: var(--white);
 }
 
 /*    CONTACT (AND THX)   */
@@ -330,7 +382,9 @@ header {
 .thx-container p {
     font-size: large;
     color: var(--white);
+    padding-block: 1em;
     margin-bottom: 3em;
+    background-color: #0000007c;
 }
 
 .form-field {
@@ -500,4 +554,33 @@ footer li {
 
 .footer-bottom {
     grid-area: e;
+}
+
+/*animations*/
+.slide-up.animate:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.slide-up.animate:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+
+.slide-up.animate:nth-of-type(3) {
+    animation-delay: 0.5s;
+}
+
+.slide-down.animate:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.slide-down.animate:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+
+.slide-down.animate:nth-of-type(3) {
+    animation-delay: 0.5s;
+}
+
+.slide-down.animate:nth-of-type(4) {
+    animation-delay: 0.7s;
 }
