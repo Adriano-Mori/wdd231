@@ -58,11 +58,13 @@ header {
 }
 
 
+
 .navigation li.current a {
     color: var(--orange);
 }
 
 /*hero*/
+
 .hero,
 .hero-menu,
 .hero-contact {
@@ -94,6 +96,7 @@ header {
     position: relative;
     z-index: 1;
     padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.058);
     color: #ffffff;
     max-width: 600px;
 }
@@ -188,6 +191,10 @@ header {
 
 .promotions h2 {
     color: var(--orange)
+}
+
+.promotions {
+    color: var(--white)
 }
 
 .promotions .one-line::before,
@@ -585,4 +592,9 @@ footer li {
 
 .slide-down.animate:nth-of-type(4) {
     animation-delay: 0.7s;
+}
+
+.thx-anim {
+    opacity: 0;
+    animation: slideLeft 0.5s ease forwards;
 }

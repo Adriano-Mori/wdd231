@@ -1,4 +1,9 @@
-
+import { startAnimations } from "./anim.js";
+import { headerFooter } from "./header-footer.js";
+import { toggleFields } from "./toggle.js";
+headerFooter();
+startAnimations();
+toggleFields();
 const locationSelection = document.querySelector("#location")
 
 async function getLocations() {

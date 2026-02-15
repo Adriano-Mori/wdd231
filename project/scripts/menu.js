@@ -1,3 +1,9 @@
+import { startAnimations } from "./anim.js";
+import { headerFooter } from "./header-footer.js";
+
+headerFooter();
+const observer = startAnimations();
+
 const menuListContainer = document.querySelector('#menu-list')
 async function getMenu() {
     try {
